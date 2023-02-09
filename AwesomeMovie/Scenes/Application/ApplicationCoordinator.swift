@@ -21,9 +21,17 @@ final class ApplicationCoordinator: BaseCoordinator,AppCoordinatorFactoryOutput 
     }
     
     override func start(with option: DeepLinkOption?) {
-        runMainFlow()
+        runTabFlow()
     }
-    private func runMainFlow() {
-        
+    private func runTabFlow(with option: DeepLinkOption? = nil){
+        //Contains viewController
+        var (coordinator, module) = coordinatorFactory.makeTabCoordiantor()
+        coordinator.finishFlow = {[weak self, weak coordinator] in
+            self?.removeDependency(coordinator)
+            self?.start()
+        }
+        addDependecny(coordinator)
+        router.setRootModule(module, hideBar: true)
+        coordinator.start(with: option)
     }
 }
