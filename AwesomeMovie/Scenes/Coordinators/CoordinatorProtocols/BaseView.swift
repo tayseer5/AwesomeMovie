@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol BaseView{
+protocol BaseView: Presentable{
     var finishFlow: (() -> Void)? {get set}
 }
