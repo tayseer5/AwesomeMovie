@@ -6,6 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
 protocol CoordinatorFactory {
+    func makeTabCoordiantor() -> (Coordinator & TabCoordinatorOutput, toPresent: Presentable?)
+    func makeHomeCoordinator(navController: UINavigationController?) -> Coordinator & HomeCoordinatorOutput
+    func makeFavouriteCoordinator(navController: UINavigationController?) -> Coordinator & FavouriteCoordinatorOutput
 }
