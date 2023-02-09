@@ -12,4 +12,5 @@ protocol TabbarView: AnyObject {
     var onViewDidLoad: ((UINavigationController) -> ())? { get set }
     var onFavouriteFlowSelect: ((UINavigationController) -> ())? { get set }
     var onMovieFlowSelect: ((UINavigationController) -> ())? { get set }
+    
 }
