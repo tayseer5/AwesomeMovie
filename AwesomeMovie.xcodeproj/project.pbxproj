@@ -31,6 +31,11 @@
 		311905DE299444F6000613D0 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311905DD299444F6000613D0 /* TabCoordinator.swift */; };
 		311905E1299450F0000613D0 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311905E0299450F0000613D0 /* TabbarView.swift */; };
 		311905E329945555000613D0 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311905E229945555000613D0 /* MainTabController.swift */; };
+		313194A12994F78700275D69 /* HomeMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313194A02994F78700275D69 /* HomeMovieViewModel.swift */; };
+		313194A52994F7C700275D69 /* TopMoviesImagesSliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313194A32994F7C700275D69 /* TopMoviesImagesSliderTableViewCell.swift */; };
+		313194A62994F7C700275D69 /* TopMoviesImagesSliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 313194A42994F7C700275D69 /* TopMoviesImagesSliderTableViewCell.xib */; };
+		313194AA2994F9AC00275D69 /* ImagesSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313194A82994F9AC00275D69 /* ImagesSliderCollectionViewCell.swift */; };
+		313194AB2994F9AC00275D69 /* ImagesSliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 313194A92994F9AC00275D69 /* ImagesSliderCollectionViewCell.xib */; };
 		314B35C029945B7000F61551 /* HomeMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B35BF29945B7000F61551 /* HomeMovieViewController.swift */; };
 		314B35C229945B8A00F61551 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B35C129945B8A00F61551 /* FavouriteViewController.swift */; };
 		314B35C529945C1600F61551 /* HomeCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B35C429945C1600F61551 /* HomeCoordinatorOutput.swift */; };
@@ -41,6 +46,7 @@
 		314B35D029945C7600F61551 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B35CF29945C7600F61551 /* FavouriteView.swift */; };
 		314B35D229945CFA00F61551 /* FavouriteModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B35D129945CFA00F61551 /* FavouriteModuleFactory.swift */; };
 		314B35D429945D0500F61551 /* HomeModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B35D329945D0500F61551 /* HomeModuleFactory.swift */; };
+		31E6AB64299503A80018596B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6AB63299503A80018596B /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +76,11 @@
 		311905DD299444F6000613D0 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
 		311905E0299450F0000613D0 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		311905E229945555000613D0 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		313194A02994F78700275D69 /* HomeMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMovieViewModel.swift; sourceTree = "<group>"; };
+		313194A32994F7C700275D69 /* TopMoviesImagesSliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesImagesSliderTableViewCell.swift; sourceTree = "<group>"; };
+		313194A42994F7C700275D69 /* TopMoviesImagesSliderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopMoviesImagesSliderTableViewCell.xib; sourceTree = "<group>"; };
+		313194A82994F9AC00275D69 /* ImagesSliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesSliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		313194A92994F9AC00275D69 /* ImagesSliderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesSliderCollectionViewCell.xib; sourceTree = "<group>"; };
 		314B35BF29945B7000F61551 /* HomeMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMovieViewController.swift; sourceTree = "<group>"; };
 		314B35C129945B8A00F61551 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		314B35C429945C1600F61551 /* HomeCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorOutput.swift; sourceTree = "<group>"; };
@@ -80,6 +91,7 @@
 		314B35CF29945C7600F61551 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
 		314B35D129945CFA00F61551 /* FavouriteModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteModuleFactory.swift; sourceTree = "<group>"; };
 		314B35D329945D0500F61551 /* HomeModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleFactory.swift; sourceTree = "<group>"; };
+		31E6AB63299503A80018596B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +124,7 @@
 		310B82502992CD4E00C0B97B /* AwesomeMovie */ = {
 			isa = PBXGroup;
 			children = (
+				31E6AB62299503780018596B /* Utilities */,
 				310B82652992D14000C0B97B /* Scenes */,
 				310B825A2992CD4F00C0B97B /* Assets.xcassets */,
 				310B825C2992CD4F00C0B97B /* LaunchScreen.storyboard */,
@@ -145,9 +158,9 @@
 		310B826B2992D33000C0B97B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				313194A22994F79F00275D69 /* Views */,
+				3131949F2994F76000275D69 /* MVVM */,
 				314B35C329945C0500F61551 /* Coordinator */,
-				314B35BF29945B7000F61551 /* HomeMovieViewController.swift */,
-				314B35CD29945C6900F61551 /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -235,6 +248,35 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		3131949F2994F76000275D69 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				314B35BF29945B7000F61551 /* HomeMovieViewController.swift */,
+				314B35CD29945C6900F61551 /* HomeView.swift */,
+				313194A02994F78700275D69 /* HomeMovieViewModel.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		313194A22994F79F00275D69 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				313194A72994F98C00275D69 /* ImagesSlider */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		313194A72994F98C00275D69 /* ImagesSlider */ = {
+			isa = PBXGroup;
+			children = (
+				313194A32994F7C700275D69 /* TopMoviesImagesSliderTableViewCell.swift */,
+				313194A42994F7C700275D69 /* TopMoviesImagesSliderTableViewCell.xib */,
+				313194A82994F9AC00275D69 /* ImagesSliderCollectionViewCell.swift */,
+				313194A92994F9AC00275D69 /* ImagesSliderCollectionViewCell.xib */,
+			);
+			path = ImagesSlider;
+			sourceTree = "<group>";
+		};
 		314B35C329945C0500F61551 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +295,14 @@
 				314B35D129945CFA00F61551 /* FavouriteModuleFactory.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		31E6AB62299503780018596B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				31E6AB63299503A80018596B /* Extension.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +364,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				310B825E2992CD4F00C0B97B /* LaunchScreen.storyboard in Resources */,
+				313194A62994F7C700275D69 /* TopMoviesImagesSliderTableViewCell.xib in Resources */,
+				313194AB2994F9AC00275D69 /* ImagesSliderCollectionViewCell.xib in Resources */,
 				310B825B2992CD4F00C0B97B /* Assets.xcassets in Resources */,
 				310B82592992CD4E00C0B97B /* Main.storyboard in Resources */,
 			);
@@ -334,6 +386,7 @@
 				310B82792992F7AF00C0B97B /* AppCoordinatorFactoryOutput.swift in Sources */,
 				310B8288299308FD00C0B97B /* UIViewControllerExtension.swift in Sources */,
 				314B35C029945B7000F61551 /* HomeMovieViewController.swift in Sources */,
+				313194A12994F78700275D69 /* HomeMovieViewModel.swift in Sources */,
 				310B827E299306A800C0B97B /* CoordinatorFactory.swift in Sources */,
 				310B82692992D1BB00C0B97B /* ApplicationCoordinator.swift in Sources */,
 				314B35C829945C2F00F61551 /* FavouriteCoordinatorOutput.swift in Sources */,
@@ -341,6 +394,7 @@
 				314B35D229945CFA00F61551 /* FavouriteModuleFactory.swift in Sources */,
 				311905E329945555000613D0 /* MainTabController.swift in Sources */,
 				311905DC299444EA000613D0 /* TabCoordinatorOutput.swift in Sources */,
+				31E6AB64299503A80018596B /* Extension.swift in Sources */,
 				310B828A2993093500C0B97B /* BundleExtensions.swift in Sources */,
 				314B35C229945B8A00F61551 /* FavouriteViewController.swift in Sources */,
 				311905DE299444F6000613D0 /* TabCoordinator.swift in Sources */,
@@ -348,11 +402,13 @@
 				310B828C299309DC00C0B97B /* DeepLinkOption.swift in Sources */,
 				314B35D429945D0500F61551 /* HomeModuleFactory.swift in Sources */,
 				310B82522992CD4E00C0B97B /* AppDelegate.swift in Sources */,
+				313194A52994F7C700275D69 /* TopMoviesImagesSliderTableViewCell.swift in Sources */,
 				310B82772992D65C00C0B97B /* RouterImp.swift in Sources */,
 				311905E1299450F0000613D0 /* TabbarView.swift in Sources */,
 				310B82822993076C00C0B97B /* ModuleFactoryImplementation.swift in Sources */,
 				310B8286299308E700C0B97B /* NSObjectExtensions.swift in Sources */,
 				314B35CA29945C4000F61551 /* HomeCoordinator.swift in Sources */,
+				313194AA2994F9AC00275D69 /* ImagesSliderCollectionViewCell.swift in Sources */,
 				314B35C529945C1600F61551 /* HomeCoordinatorOutput.swift in Sources */,
 				310B82542992CD4E00C0B97B /* SceneDelegate.swift in Sources */,
 				310B827B2992FD9400C0B97B /* Presentable.swift in Sources */,

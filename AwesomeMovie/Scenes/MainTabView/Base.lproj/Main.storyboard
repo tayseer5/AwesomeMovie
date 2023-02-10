@@ -32,8 +32,30 @@
                     <view key="view" contentMode="scaleToFill" id="Ybr-Fb-bbD">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5mE-ei-6mI">
+                                <rect key="frame" x="0.0" y="59" width="393" height="70"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="05m-55-iag"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="d5G-Rs-rTl">
+                                <rect key="frame" x="0.0" y="129" width="393" height="640"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="99x-pO-6uc"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="99x-pO-6uc" firstAttribute="bottom" secondItem="d5G-Rs-rTl" secondAttribute="bottom" id="0iZ-ld-8Mb"/>
+                            <constraint firstItem="d5G-Rs-rTl" firstAttribute="leading" secondItem="99x-pO-6uc" secondAttribute="leading" id="79y-uw-8iu"/>
+                            <constraint firstItem="99x-pO-6uc" firstAttribute="trailing" secondItem="5mE-ei-6mI" secondAttribute="trailing" id="HiR-iP-aXI"/>
+                            <constraint firstItem="5mE-ei-6mI" firstAttribute="top" secondItem="99x-pO-6uc" secondAttribute="top" id="UVw-0E-yLc"/>
+                            <constraint firstItem="99x-pO-6uc" firstAttribute="trailing" secondItem="d5G-Rs-rTl" secondAttribute="trailing" id="XWX-wk-4Nh"/>
+                            <constraint firstItem="d5G-Rs-rTl" firstAttribute="top" secondItem="5mE-ei-6mI" secondAttribute="bottom" id="dE0-uT-gxh"/>
+                            <constraint firstItem="5mE-ei-6mI" firstAttribute="leading" secondItem="99x-pO-6uc" secondAttribute="leading" id="h2T-fj-FNQ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" landscapeImage="Home" largeContentSizeImage="Home" id="sl0-in-W2F">
                         <imageReference key="image" image="Home" symbolScale="large" renderingMode="template"/>
@@ -41,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8F-QJ-DdD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-853" y="-600"/>
+            <point key="canvasLocation" x="-854.19847328244271" y="-600"/>
         </scene>
         <!--Main Tab Controller-->
         <scene sceneID="NA0-gI-f5K">
@@ -65,8 +87,8 @@
     <resources>
         <image name="Favourite" width="24" height="20"/>
         <image name="Home" width="24" height="24"/>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="155" id="KGk-i7-Jjw" customClass="TopMoviesImagesSliderTableViewCell" customModule="AwesomeMovie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="514" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="514" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="69d-qU-ZOG">
+                        <rect key="frame" x="1" y="1" width="512" height="153"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="46f-VY-8E4">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="QtZ-Wi-fXR">
+                        <rect key="frame" x="199" y="124" width="116" height="26"/>
+                    </pageControl>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="69d-qU-ZOG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="1" id="52m-Qf-4qm"/>
+                    <constraint firstItem="QtZ-Wi-fXR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="M6m-dA-xm6"/>
+                    <constraint firstAttribute="trailing" secondItem="69d-qU-ZOG" secondAttribute="trailing" constant="1" id="aux-xt-xq0"/>
+                    <constraint firstAttribute="bottom" secondItem="69d-qU-ZOG" secondAttribute="bottom" constant="1" id="flx-lu-ckF"/>
+                    <constraint firstItem="69d-qU-ZOG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="kgV-s0-tZ2"/>
+                    <constraint firstAttribute="bottom" secondItem="QtZ-Wi-fXR" secondAttribute="bottom" constant="5" id="rZp-qu-Y5x"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="autoMoviesImageSliderCollectionViiew" destination="69d-qU-ZOG" id="Vi6-uJ-l9A"/>
+                <outlet property="moviesImagesPageController" destination="QtZ-Wi-fXR" id="vwp-eN-pnk"/>
+            </connections>
+            <point key="canvasLocation" x="207.63358778625954" y="58.802816901408455"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
