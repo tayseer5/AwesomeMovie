@@ -31,3 +31,7 @@ enum Param: String {
     case page = "page"
     
 }
+enum SortType {
+    case mostPopular
+    case topRated
+}

@@ -11,26 +11,26 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    var rootController: UINavigationController {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController()
-        window?.makeKeyAndVisible()
-        return self.window?.rootViewController as? UINavigationController ?? UINavigationController()
-    }
-    
-    lazy var applicationCoordinator: Coordinator = self.makeCoordinator()
-
-    private func makeCoordinator() -> Coordinator {
-        return ApplicationCoordinator(
-          router: RouterImp(rootController: self.rootController),
-          coordinatorFactory: CoordinatorFactoryImp(),
-          moduleFactory: ModuleFactoryImplementation()
-        )
-    }
+//    var rootController: UINavigationController {
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.rootViewController = UINavigationController()
+//        window?.makeKeyAndVisible()
+//        return self.window?.rootViewController as? UINavigationController ?? UINavigationController()
+//    }
+//
+//    lazy var applicationCoordinator: Coordinator = self.makeCoordinator()
+//
+//    private func makeCoordinator() -> Coordinator {
+//        return ApplicationCoordinator(
+//          router: RouterImp(rootController: self.rootController),
+//          coordinatorFactory: CoordinatorFactoryImp(),
+//          moduleFactory: ModuleFactoryImplementation()
+//        )
+//    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        applicationCoordinator.start()
+        //applicationCoordinator.start()
         return true
     }
 

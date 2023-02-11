@@ -7,13 +7,10 @@
 
 import Foundation
 
-protocol MoviesAPIProtocol {
-    func getMostPopularMovie (pageNumber: Int, completionHandler: @escaping (Result<MovieResponse, NSError>) -> Void)
-    func getTopRatedMovie (pageNumber: Int, completionHandler: @escaping (Result<MovieResponse, NSError>) -> Void)
-}
 
 
-class MoviesAPI: BaseAPI<RepositoriesNetworking>, MoviesAPIProtocol {
+
+class MoviesAPI: BaseAPI<RepositoriesNetworking>, MoviesRepositories {
     func getMostPopularMovie(pageNumber: Int, completionHandler: @escaping (Result<MovieResponse, NSError>) -> Void) {
         self.fetchData(target: .mostPopularMovie(pageNumber: pageNumber), responseClass: MovieResponse.self) { (result) in
             completionHandler(result)

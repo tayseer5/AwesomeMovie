@@ -13,5 +13,16 @@ class ImagesSliderCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    private func bindData(model: Movie) {
+        var imageEndPoint = model.posterPath ?? ""
+        self.cellImage.setImage(imageUrl: imageEndPoint.imagePath)
+    }
 
+}
+
+extension ImagesSliderCollectionViewCell : ConfigurableCell {
+    
+    func configure(data viewModel:Movie, indexPath:IndexPath) {
+        bindData(model: viewModel)
+    }
 }
