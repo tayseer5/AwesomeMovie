@@ -33,9 +33,37 @@ class MainTabController: UITabBarController,TabbarView {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.selectedIndex = currentSelectedIndex.rawValue
+        test()
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+    }
+    func test () {
+        //will be changed to MoviesAPIprotocol which will be handed by usecase 
+        MoviesAPI().getMostPopularMovie(pageNumber: 1) { [weak self] result in
+            print("getMostPopularMovie")
+            print(result)
+            switch result {
+            case .success(let data):
+                print(data)
+                break;
+            case .failure(let error):
+                print(error)
+                break
+            }
+        }
+        MoviesAPI().getTopRatedMovie(pageNumber: 1) { [weak self] result in
+            print("getTopRatedMovie")
+            print(result)
+            switch result {
+            case .success(let data):
+                print(data)
+                break;
+            case .failure(let error):
+                print(error)
+                break
+            }
+        }
     }
 }
 

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3E0D2800-878F-4EC6-9D6B-5BD91C6E6342"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27210961-327C-4FF2-8A03-5B341E376919"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AwesomeMovie/Infrastructure/Network/Repositories/RepositoriesNetworking.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "64184A82-D776-4799-A682-BC7BD8E79788"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AwesomeMovie/Infrastructure/Network/Base/BaseAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchData(target:responseClass:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F191FAE4-2D1C-486C-877E-13A0DA37311E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Alamofire/Source/Session.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1065"
+            endingLineNumber = "1065"
+            landmarkName = "performSetupOperations(for:convertible:shouldCreateTask:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F191FAE4-2D1C-486C-877E-13A0DA37311E - 7ba7a29d904762b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alamofire.Session.performSetupOperations(for: Alamofire.Request, convertible: Alamofire.URLRequestConvertible, shouldCreateTask: () -&gt; Swift.Bool) -&gt; ()"
+                  moduleName = "Alamofire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tayseeranwar/Desktop/AwesomeMovie/Pods/Alamofire/Source/Session.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1065"
+                  endingLineNumber = "1065"
+                  offsetFromSymbolStart = "1007">
+               </Location>
+               <Location
+                  uuid = "F191FAE4-2D1C-486C-877E-13A0DA37311E - c267aeb3b38a5742"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in Alamofire.Session.performSetupOperations(for: Alamofire.Request, convertible: Alamofire.URLRequestConvertible, shouldCreateTask: () -&gt; Swift.Bool) -&gt; ()"
+                  moduleName = "Alamofire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tayseeranwar/Desktop/AwesomeMovie/Pods/Alamofire/Source/Session.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1065"
+                  endingLineNumber = "1065"
+                  offsetFromSymbolStart = "45">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9B1E2C2A-1EEB-4C53-93AE-84CC973DA6B4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AwesomeMovie/Infrastructure/Network/Base/BaseAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "fetchData(target:responseClass:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22954908-15D8-4115-9EE7-9D0A5979A93A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AwesomeMovie/Infrastructure/Network/Base/BaseAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "fetchData(target:responseClass:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "22954908-15D8-4115-9EE7-9D0A5979A93A - 5b5865188c7b9722"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AwesomeMovie.BaseAPI.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable&gt;(target: &#x3c4;_0_0, responseClass: &#x3c4;_1_0.Type, completionHandler: (Swift.Result&lt;&#x3c4;_1_0, __C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AwesomeMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tayseeranwar/Desktop/AwesomeMovie/AwesomeMovie/Infrastructure/Network/Base/BaseAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "805">
+               </Location>
+               <Location
+                  uuid = "22954908-15D8-4115-9EE7-9D0A5979A93A - ca97d00c2e0dc1a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data, Alamofire.AFError&gt;) -&gt; () in AwesomeMovie.BaseAPI.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable&gt;(target: &#x3c4;_0_0, responseClass: &#x3c4;_1_0.Type, completionHandler: (Swift.Result&lt;&#x3c4;_1_0, __C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "AwesomeMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tayseeranwar/Desktop/AwesomeMovie/AwesomeMovie/Infrastructure/Network/Base/BaseAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "592">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EABA1D0C-D80D-4B0F-81CF-75CFD0AC63EC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AwesomeMovie/Scenes/MainTabView/MainTabController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "test()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B6846A46-3AD5-43C2-8212-F2DE78494E55"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AwesomeMovie/Domain/Entites/Movie.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "MovieResponse"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "B6846A46-3AD5-43C2-8212-F2DE78494E55 - f95a270e5da75bd1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AwesomeMovie.MovieResponse.CodingKeys.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;AwesomeMovie.MovieResponse.CodingKeys&gt;"
+                  moduleName = "AwesomeMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tayseeranwar/Desktop/AwesomeMovie/AwesomeMovie/Domain/Entites/Movie.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  uuid = "B6846A46-3AD5-43C2-8212-F2DE78494E55 - a9d6ca3e3b850d7b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AwesomeMovie.MovieResponse.CodingKeys.rawValue.getter : Swift.String"
+                  moduleName = "AwesomeMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tayseeranwar/Desktop/AwesomeMovie/AwesomeMovie/Domain/Entites/Movie.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "79">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F13BC366-D373-4BCA-B48D-5A1731672A34"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AwesomeMovie/Domain/Entites/Movie.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "CodingKeys"
+            landmarkType = "13">
+            <Locations>
+               <Location
+                  uuid = "F13BC366-D373-4BCA-B48D-5A1731672A34 - f95a270e5da75bd1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AwesomeMovie.MovieResponse.CodingKeys.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;AwesomeMovie.MovieResponse.CodingKeys&gt;"
+                  moduleName = "AwesomeMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tayseeranwar/Desktop/AwesomeMovie/AwesomeMovie/Domain/Entites/Movie.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  uuid = "F13BC366-D373-4BCA-B48D-5A1731672A34 - a9d6ca3e3b850d7b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AwesomeMovie.MovieResponse.CodingKeys.rawValue.getter : Swift.String"
+                  moduleName = "AwesomeMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tayseeranwar/Desktop/AwesomeMovie/AwesomeMovie/Domain/Entites/Movie.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "79">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E165387-EC52-4B2C-B988-F46258D1B7F3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AwesomeMovie/Domain/Entites/Movie.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "Movie"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "5E165387-EC52-4B2C-B988-F46258D1B7F3 - fab3ec5fde27a772"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AwesomeMovie.Movie.CodingKeys.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;AwesomeMovie.Movie.CodingKeys&gt;"
+                  moduleName = "AwesomeMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tayseeranwar/Desktop/AwesomeMovie/AwesomeMovie/Domain/Entites/Movie.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "5E165387-EC52-4B2C-B988-F46258D1B7F3 - ead99da96ef8baaf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AwesomeMovie.Movie.CodingKeys.rawValue.getter : Swift.String"
+                  moduleName = "AwesomeMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tayseeranwar/Desktop/AwesomeMovie/AwesomeMovie/Domain/Entites/Movie.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "82">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "036FB8FB-8B71-4E0B-9AAB-F1635AEEECAA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AwesomeMovie/Domain/Entites/Movie.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "CodingKeys"
+            landmarkType = "13">
+            <Locations>
+               <Location
+                  uuid = "036FB8FB-8B71-4E0B-9AAB-F1635AEEECAA - fab3ec5fde27a772"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AwesomeMovie.Movie.CodingKeys.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;AwesomeMovie.Movie.CodingKeys&gt;"
+                  moduleName = "AwesomeMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tayseeranwar/Desktop/AwesomeMovie/AwesomeMovie/Domain/Entites/Movie.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "036FB8FB-8B71-4E0B-9AAB-F1635AEEECAA - ead99da96ef8baaf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AwesomeMovie.Movie.CodingKeys.rawValue.getter : Swift.String"
+                  moduleName = "AwesomeMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tayseeranwar/Desktop/AwesomeMovie/AwesomeMovie/Domain/Entites/Movie.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "82">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
