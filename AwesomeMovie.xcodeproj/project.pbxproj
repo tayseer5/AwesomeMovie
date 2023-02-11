@@ -47,7 +47,7 @@
 		314B35D229945CFA00F61551 /* FavouriteModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B35D129945CFA00F61551 /* FavouriteModuleFactory.swift */; };
 		314B35D429945D0500F61551 /* HomeModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B35D329945D0500F61551 /* HomeModuleFactory.swift */; };
 		31E6AB64299503A80018596B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6AB63299503A80018596B /* Extension.swift */; };
-		31E6AB6F2996564E0018596B /* RepositoriesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6AB6A2996564E0018596B /* RepositoriesAPI.swift */; };
+		31E6AB6F2996564E0018596B /* MoviesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6AB6A2996564E0018596B /* MoviesAPI.swift */; };
 		31E6AB702996564E0018596B /* RepositoriesNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6AB6B2996564E0018596B /* RepositoriesNetworking.swift */; };
 		31E6AB712996564E0018596B /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6AB6D2996564E0018596B /* TargetType.swift */; };
 		31E6AB722996564E0018596B /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6AB6E2996564E0018596B /* BaseAPI.swift */; };
@@ -99,7 +99,7 @@
 		314B35D129945CFA00F61551 /* FavouriteModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteModuleFactory.swift; sourceTree = "<group>"; };
 		314B35D329945D0500F61551 /* HomeModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleFactory.swift; sourceTree = "<group>"; };
 		31E6AB63299503A80018596B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		31E6AB6A2996564E0018596B /* RepositoriesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesAPI.swift; sourceTree = "<group>"; };
+		31E6AB6A2996564E0018596B /* MoviesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesAPI.swift; sourceTree = "<group>"; };
 		31E6AB6B2996564E0018596B /* RepositoriesNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesNetworking.swift; sourceTree = "<group>"; };
 		31E6AB6D2996564E0018596B /* TargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		31E6AB6E2996564E0018596B /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
@@ -355,7 +355,7 @@
 		31E6AB692996564E0018596B /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				31E6AB6A2996564E0018596B /* RepositoriesAPI.swift */,
+				31E6AB6A2996564E0018596B /* MoviesAPI.swift */,
 				31E6AB6B2996564E0018596B /* RepositoriesNetworking.swift */,
 			);
 			path = Repositories;
@@ -547,7 +547,7 @@
 				310B82822993076C00C0B97B /* ModuleFactoryImplementation.swift in Sources */,
 				310B8286299308E700C0B97B /* NSObjectExtensions.swift in Sources */,
 				314B35CA29945C4000F61551 /* HomeCoordinator.swift in Sources */,
-				31E6AB6F2996564E0018596B /* RepositoriesAPI.swift in Sources */,
+				31E6AB6F2996564E0018596B /* MoviesAPI.swift in Sources */,
 				313194AA2994F9AC00275D69 /* ImagesSliderCollectionViewCell.swift in Sources */,
 				314B35C529945C1600F61551 /* HomeCoordinatorOutput.swift in Sources */,
 				310B82542992CD4E00C0B97B /* SceneDelegate.swift in Sources */,
