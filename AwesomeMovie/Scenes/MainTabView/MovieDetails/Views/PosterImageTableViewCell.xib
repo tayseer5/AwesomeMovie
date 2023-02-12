@@ -27,6 +27,7 @@
                         </constraints>
                     </imageView>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="ABN-Jg-eUH" secondAttribute="bottom" constant="5" id="5L8-76-0ZJ"/>
                     <constraint firstItem="Jb6-61-HML" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.75" id="8Us-Fy-4Uf"/>
@@ -35,6 +36,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="Jb6-61-HML" secondAttribute="trailing" id="Ef8-hg-Ib9"/>
                 <constraint firstItem="Jb6-61-HML" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" id="LCI-W7-wEQ"/>
