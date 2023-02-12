@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FavouriteViewController: UIViewController, FavouriteView {
+final class FavouriteViewController: UIViewController, FavouriteView {
     var finishFlow: (() -> Void)?
     
 

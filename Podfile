@@ -7,4 +7,5 @@ target 'AwesomeMovie' do
 
   # Pods for AwesomeMovie
 pod 'Alamofire'
+pod 'SDWebImage'
 end

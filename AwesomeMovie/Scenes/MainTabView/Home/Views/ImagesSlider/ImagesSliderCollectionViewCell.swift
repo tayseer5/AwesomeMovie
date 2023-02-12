@@ -8,10 +8,27 @@
 import UIKit
 
 class ImagesSliderCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var cellImage: UIImageView!
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var cellImage: UIImageView! {
+        didSet {
+            cellImage.layer.cornerRadius = 25.0
+             cellImage.clipsToBounds = true;
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+    }
+    private func bindData(model: Movie) {
+        var imageEndPoint = model.posterPath ?? ""
+        self.cellImage.setImage(imageUrl: imageEndPoint.imagePath)
     }
 
+}
+
+extension ImagesSliderCollectionViewCell : ConfigurableCell {
+    
+    func configure(data viewModel:Movie, indexPath:IndexPath) {
+        bindData(model: viewModel)
+    }
 }
