@@ -8,6 +8,6 @@
 import Foundation
 
 protocol MoviesRepositories {
-    func getMostPopularMovie (pageNumber: Int, completionHandler: @escaping (Result<MovieResponse, NSError>) -> Void)
-    func getTopRatedMovie (pageNumber: Int, completionHandler: @escaping (Result<MovieResponse, NSError>) -> Void)
+    func getMovie (sortType: SortType, pageNumber: Int, completionHandler: @escaping (Result<MovieResponse, NSError>) -> Void)
+    //func getTopRatedMovie (pageNumber: Int, completionHandler: @escaping (Result<MovieResponse, NSError>) -> Void)
 }
