@@ -1,0 +1,47 @@
+//
+//  TabCoordinator.swift
+//  AwesomeMovie
+//
+//  Created by tayseer anwar on 08/02/2023.
+//
+
+import Foundation
+import UIKit
+
+class TabCoordinator: BaseCoordinator, TabCoordinatorOutput {
+    var finishFlow: (() -> Void)?
+    //MARK: private var
+    private let tabbarView: TabbarView
+    private let coordinatorFactory: CoordinatorFactory
+    //MARK: override func
+    init(tabbarView: TabbarView, coordinatorFactory: CoordinatorFactory) {
+        self.tabbarView = tabbarView
+        self.coordinatorFactory = coordinatorFactory
+    }
+    override func start() {
+        tabbarView.onViewDidLoad = runMovieFlow()
+        tabbarView.onMovieFlowSelect = runMovieFlow()
+        tabbarView.onFavouriteFlowSelect = runFavouriteFlow()
+    }
+    //MARK: coordinator module creator
+    private func runMovieFlow() -> ((UINavigationController) -> ()) {
+       return { navController in
+         if navController.viewControllers.isEmpty == true {
+           let itemCoordinator = self.coordinatorFactory.makeHomeCoordinator(navController: navController)
+             self.addDependecny(itemCoordinator)
+           itemCoordinator.start()
+         }
+       }
+     }
+     
+     private func runFavouriteFlow() -> ((UINavigationController) -> ()) {
+       return {  navController in
+         if navController.viewControllers.isEmpty == true {
+           let favouriteCoordinator = self.coordinatorFactory.makeFavouriteCoordinator(navController: navController)
+             self.addDependecny(favouriteCoordinator)
+             favouriteCoordinator.start()
+         }
+       }
+     }
+   }
+
