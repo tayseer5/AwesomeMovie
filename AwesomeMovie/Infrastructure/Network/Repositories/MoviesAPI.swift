@@ -7,9 +7,6 @@
 
 import Foundation
 
-
-
-
 class MoviesAPI: BaseAPI<RepositoriesNetworking>, MoviesRepositories {
     func getMostPopularMovie(pageNumber: Int, completionHandler: @escaping (Result<MovieResponse, NSError>) -> Void) {
         self.fetchData(target: .mostPopularMovie(pageNumber: pageNumber), responseClass: MovieResponse.self) { (result) in

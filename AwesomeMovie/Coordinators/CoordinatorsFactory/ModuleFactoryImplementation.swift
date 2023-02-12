@@ -12,11 +12,14 @@ final class ModuleFactoryImplementation:HomeModuleFactory,FavouriteModuleFactory
         vc.viewModel = HomeMovieViewModel(fetchMoviesDataUseCaseProtocol: FetchMoviesDataUseCase(moviesRepositories: MoviesAPI()))
         return vc
     }
-    
     func makeFavouriteScreen() -> FavouriteView {
         let vc = FavouriteViewController.controllerFromStoryboard(.main)
         return vc
     }
-    
+    func makeMovieDetailsScreen (movie: Movie) -> MovieDetailsView {
+        let vc = MovieDetailsViewController.controllerFromStoryboard(.main)
+        vc.viewModel = MovieDetailsViewModel (movie: movie)
+        return vc
+    }
     
 }

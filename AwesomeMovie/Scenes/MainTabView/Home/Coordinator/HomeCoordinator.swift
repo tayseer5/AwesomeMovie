@@ -22,9 +22,13 @@ class HomeCoordinator: BaseCoordinator, HomeCoordinatorOutput {
     override func start(with option: DeepLinkOption? = nil){
         makeHome()
     }
-    
+    //MARK: - coordinator module creatour
     private func makeHome(with option: DeepLinkOption? = nil){
-        let home = factory.makeHomeScreen()
+        var home = factory.makeHomeScreen()
+        home.moveToDetails = { [weak self] movie in
+            let vc = self?.factory.makeMovieDetailsScreen(movie: movie)
+            self?.router.push(vc)
+        }
         router.setRootModule(home)
     }
 }

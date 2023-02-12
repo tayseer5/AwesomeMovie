@@ -11,13 +11,10 @@ import Alamofire
 enum HTTPMethod: String {
     case get = "GET"
 }
-
-
 enum Task {
     case requestPlain
     case requestParameters(parameters: [String: Any], encoding: ParameterEncoding)
 }
-
 
 protocol TargetType {
     

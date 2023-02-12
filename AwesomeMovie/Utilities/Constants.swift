@@ -35,6 +35,7 @@ enum SortType {
     case mostPopular
     case topRated
 }
+//MARK: Color Constaints
 enum HexColors: String {
     case grayshGreen = "#12303F"
 }

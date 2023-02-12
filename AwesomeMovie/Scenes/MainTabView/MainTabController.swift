@@ -13,13 +13,14 @@ enum MovieTabs: Int {
     case favourite = 1
 }
 
-
 final class MainTabController: UITabBarController,TabbarView {
+    //MARK: tabbarview confirmation
     var onViewDidLoad: ((UINavigationController) -> ())?
     var onFavouriteFlowSelect: ((UINavigationController) -> ())?
     var onMovieFlowSelect: ((UINavigationController) -> ())?
-    var currentSelectedIndex: MovieTabs = .home
-    
+    //MARK: private var
+    private var currentSelectedIndex: MovieTabs = .home
+    //MARK: override func
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
@@ -38,7 +39,7 @@ final class MainTabController: UITabBarController,TabbarView {
         super.viewDidAppear(animated)
     }
 }
-
+//MARK: UITabBarControllerDelegate extension
 extension MainTabController: UITabBarControllerDelegate{
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
 

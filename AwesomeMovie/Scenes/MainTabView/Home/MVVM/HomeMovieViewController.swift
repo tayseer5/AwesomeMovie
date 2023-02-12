@@ -11,6 +11,7 @@ import UIKit
 
 
 final class HomeMovieViewController: UIViewController, HomeView {
+    //MARK: IBOutlet
     @IBOutlet weak var movieCollectionView: UICollectionView! {
         didSet{
             movieCollectionView.registerNib(ImagesSliderCollectionViewCell.self)
@@ -19,10 +20,12 @@ final class HomeMovieViewController: UIViewController, HomeView {
             movieCollectionView.prefetchDataSource = self
         }
     }
-    
+    //MARK: var
+    var moveToDetails: ((Movie) -> Void)?
     var finishFlow: (() -> Void)?
     var viewModel: (HomeMovieViewModelInput & HomeMovieViewModelOutput)?
-    let cellWidth = UIScreen.main.bounds.width / 2.1
+    private let cellWidth = UIScreen.main.bounds.width / 2.1
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         adjustUI()
@@ -32,6 +35,7 @@ final class HomeMovieViewController: UIViewController, HomeView {
         self.navigationItem.title = "The title";
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
+    //MARK: Private desgin function
     private func adjustUI () {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -77,6 +81,7 @@ final class HomeMovieViewController: UIViewController, HomeView {
         }
         
     }
+    //MARK: Private heling function
     private func handlingBindingWithViewModel() {
         viewModel?.showErrorMessage = { [weak self] messgage in
             
@@ -100,9 +105,15 @@ final class HomeMovieViewController: UIViewController, HomeView {
     */
 
 }
+//MARK: - UICollectionViewDelegate extention
 extension HomeMovieViewController : UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let data = viewModel?.getDataForIndex(indexPath.row) {
+            self.moveToDetails?(data)
+        }
+    }
 }
+//MARK: - UICollectionViewDataSource extention
 extension HomeMovieViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel?.getNumberOfData() ?? 0
@@ -118,6 +129,7 @@ extension HomeMovieViewController : UICollectionViewDataSource {
        
     }
 }
+//MARK: - UICollectionViewDataSourcePrefetching extention
 extension HomeMovieViewController : UICollectionViewDataSourcePrefetching {
     func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
         let needsFetch = indexPaths.contains { $0.row >= ((self.viewModel?.getNumberOfData() ?? 0) - 1) }
