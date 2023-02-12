@@ -51,7 +51,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lh6-J9-X67">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="i6R-wd-JuG" kind="relationship" relationship="viewControllers" id="jDY-UC-UbS"/>
@@ -70,15 +70,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJ8-bB-pEK">
-                                <rect key="frame" x="0.0" y="59" width="393" height="70"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="7Yd-Hv-bTd"/>
-                                </constraints>
-                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vfI-Qz-E1o">
-                                <rect key="frame" x="0.0" y="129" width="393" height="689"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8eb-Ej-sFp">
                                     <size key="itemSize" width="128" height="128"/>
@@ -92,11 +85,8 @@
                         <viewLayoutGuide key="safeArea" id="N2F-FU-dmn"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="zJ8-bB-pEK" firstAttribute="leading" secondItem="N2F-FU-dmn" secondAttribute="leading" id="2f5-NE-nL0"/>
-                            <constraint firstItem="zJ8-bB-pEK" firstAttribute="top" secondItem="N2F-FU-dmn" secondAttribute="top" id="4fn-GX-040"/>
-                            <constraint firstItem="N2F-FU-dmn" firstAttribute="trailing" secondItem="zJ8-bB-pEK" secondAttribute="trailing" id="65u-fJ-vUF"/>
                             <constraint firstItem="vfI-Qz-E1o" firstAttribute="leading" secondItem="N2F-FU-dmn" secondAttribute="leading" id="WSn-hR-HUa"/>
-                            <constraint firstItem="vfI-Qz-E1o" firstAttribute="top" secondItem="zJ8-bB-pEK" secondAttribute="bottom" id="kaD-XA-gCE"/>
+                            <constraint firstItem="vfI-Qz-E1o" firstAttribute="top" secondItem="N2F-FU-dmn" secondAttribute="top" id="ee9-vi-E5N"/>
                             <constraint firstItem="N2F-FU-dmn" firstAttribute="bottom" secondItem="vfI-Qz-E1o" secondAttribute="bottom" id="kv4-XC-1Zl"/>
                             <constraint firstItem="N2F-FU-dmn" firstAttribute="trailing" secondItem="vfI-Qz-E1o" secondAttribute="trailing" id="wvG-Pu-yYt"/>
                         </constraints>

@@ -6,10 +6,6 @@
 //
 
 import UIKit
-//1) stop current layout just display data
-//2) get image
-//3) get image with different size
-//4) sort
 //5) details
 //6) favourite
 
@@ -32,8 +28,10 @@ final class HomeMovieViewController: UIViewController, HomeView {
         adjustUI()
         handlingBindingWithViewModel()
         viewModel?.viewDidLoad()
+        adjustNavBarAndAddSortButtonWithAction()
+        self.navigationItem.title = "The title";
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
-    
     private func adjustUI () {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -43,11 +41,50 @@ final class HomeMovieViewController: UIViewController, HomeView {
         layout.minimumLineSpacing = 5
         movieCollectionView?.collectionViewLayout = layout
     }
+    private func adjustNavBarAndAddSortButtonWithAction () {
+            let rightBarButtonsView = UIStackView(frame: CGRect.init(x: 0, y: 0, width: 180, height: 40))
+            rightBarButtonsView.backgroundColor = .clear
+            rightBarButtonsView.axis  = NSLayoutConstraint.Axis.horizontal
+            rightBarButtonsView.distribution  = UIStackView.Distribution.equalSpacing
+            rightBarButtonsView.alignment = UIStackView.Alignment.center
+            rightBarButtonsView.spacing   = 5.0
+            let sortButton = UIButton()
+            sortButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
+            sortButton.widthAnchor.constraint(equalToConstant: 30).isActive = true
+            //UIButton(frame: CGRect.init(x: 100, y: 8, width: 40, height: 20))
+            sortButton.setImage(UIImage(named: "funnel"), for: .normal)
+            sortButton.tintColor = .white
+            let menuClosure = {(action: UIAction) in
+                    self.sortActionHandler(value: action.title)
+                }
+            sortButton.menu = UIMenu(children: [
+                        UIAction(title: "Most Popular", handler: menuClosure),
+                        UIAction(title: "Top Rated", handler: menuClosure),
+                    ])
+            sortButton.showsMenuAsPrimaryAction = true
+            //notificatioButton.changesSelectionAsPrimaryAction = true
+            //notificatioButton.addTarget(self, action: #selector(self.openMenu), for: .touchUpInside)
+            rightBarButtonsView.addArrangedSubview(sortButton)
+            let rightBarButton = UIBarButtonItem(customView: rightBarButtonsView)
+            self.navigationItem.rightBarButtonItems = [rightBarButton]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor(hexString: HexColors.grayshGreen.rawValue)]
+    }
+    func sortActionHandler(value:String) {
+        if value == "Most Popular" {
+            viewModel?.changeSort(sortType: .mostPopular)
+        } else {
+            viewModel?.changeSort(sortType: .topRated)
+        }
+        
+    }
     private func handlingBindingWithViewModel() {
         viewModel?.showErrorMessage = { [weak self] messgage in
             
         }
-        viewModel?.dataLoaded = { [weak self] in
+        viewModel?.dataLoaded = { [weak self] reset in
+            if reset {
+                self?.movieCollectionView?.setContentOffset(.zero, animated: false)
+            }
             self?.movieCollectionView?.reloadData()
         }
     }
