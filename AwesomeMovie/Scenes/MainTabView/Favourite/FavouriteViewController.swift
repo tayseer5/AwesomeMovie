@@ -9,15 +9,11 @@ import UIKit
 
 final class FavouriteViewController: UIViewController, FavouriteView {
     var finishFlow: (() -> Void)?
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
-    
-
     /*
     // MARK: - Navigation
 

@@ -22,6 +22,19 @@ extension UICollectionView {
         return cell
     }
 }
+//MARK: - UITableView init
+extension UITableView {
+    func registerNib<T: UITableViewCell & ConfigurableCell>(_ cellClass: T.Type, bundle: Bundle? = nil){
+        self.register(T.nib, forCellReuseIdentifier: T.reuseIdentifier)
+    }
+    
+    func dequeue<T: UITableViewCell & ConfigurableCell >(_ cellClass: T.Type, indexPath: IndexPath) -> T {
+        guard let cell = self.dequeueReusableCell(withIdentifier: T.reuseIdentifier, for: indexPath) as? T else {
+            fatalError("Error: cell with id: \(T.reuseIdentifier) for indexPath: \(indexPath) is not \(T.self)")
+        }
+        return cell
+    }
+}
 //MARK: - UIImageView image Creating
 extension UIImageView {
     func setHilightedImage(imageUrl: String){
@@ -54,7 +67,7 @@ extension String {
             return BaseUrl.baseImageUrl.rawValue + Param.imageDimention.rawValue + self
         }
 }
-
+//MARK: - UIColor creation
 extension UIColor {
     convenience init(hexString: String) {
         let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
@@ -73,4 +86,42 @@ extension UIColor {
         }
         self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
     }
+}
+//MARK: - UIImageView enhance feature
+extension UIImageView {
+    func blurEffect() {
+        var context = CIContext(options: nil)
+        let currentFilter = CIFilter(name: "CIGaussianBlur")
+        if let _ = self.image {
+            let beginImage = CIImage(image: self.image! )
+            currentFilter!.setValue(beginImage, forKey: kCIInputImageKey)
+            currentFilter!.setValue(3, forKey: kCIInputRadiusKey)
+            
+            let cropFilter = CIFilter(name: "CICrop")
+            cropFilter!.setValue(currentFilter!.outputImage, forKey: kCIInputImageKey)
+            cropFilter!.setValue(CIVector(cgRect: beginImage!.extent), forKey: "inputRectangle")
+            
+            let output = cropFilter!.outputImage
+            let cgimg = context.createCGImage(output!, from: output!.extent)
+            let processedImage = UIImage(cgImage: cgimg!)
+            self.image = processedImage
+        }
+    }
+}
+//MARK: - UIView enhance feature
+extension UIView{
+   // For insert layer in Foreground
+   func addBlackGradientLayerInForeground(frame: CGRect, colors:[UIColor]){
+    let gradient = CAGradientLayer()
+    gradient.frame = frame
+    gradient.colors = colors.map{$0.cgColor}
+    self.layer.addSublayer(gradient)
+   }
+   // For insert layer in background
+   func addBlackGradientLayerInBackground(frame: CGRect, colors:[UIColor]){
+    let gradient = CAGradientLayer()
+    gradient.frame = frame
+    gradient.colors = colors.map{$0.cgColor}
+    self.layer.insertSublayer(gradient, at: 0)
+   }
 }

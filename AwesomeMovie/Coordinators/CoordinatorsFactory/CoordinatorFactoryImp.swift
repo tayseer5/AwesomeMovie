@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 final class CoordinatorFactoryImp: CoordinatorFactory {
+    //MARK: - coordinator creatour functions
     func makeTabCoordiantor() -> (Coordinator & TabCoordinatorOutput, toPresent: Presentable?) {
         let controller = MainTabController.controllerFromStoryboard(.main)
         let coordinator = TabCoordinator(tabbarView: controller, coordinatorFactory: CoordinatorFactoryImp())
@@ -23,6 +24,7 @@ final class CoordinatorFactoryImp: CoordinatorFactory {
         return coordinator
         
     }
+    //MARK: - private helping function in coordinator creator
     private func router(_ navController: UINavigationController?) -> RouterImp {
         return RouterImp(rootController: navigationController(navController))
     }

@@ -10,6 +10,37 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Movie Details View Controller-->
+        <scene sceneID="QyE-qw-Zwg">
+            <objects>
+                <viewController storyboardIdentifier="MovieDetailsViewController" hidesBottomBarWhenPushed="YES" id="tTF-fv-P75" customClass="MovieDetailsViewController" customModule="AwesomeMovie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EJu-ag-fln">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ysO-TD-XMG">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8T7-HS-aiv"/>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.18823529411764706" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8T7-HS-aiv" firstAttribute="trailing" secondItem="ysO-TD-XMG" secondAttribute="trailing" id="FHQ-En-0ym"/>
+                            <constraint firstItem="8T7-HS-aiv" firstAttribute="bottom" secondItem="ysO-TD-XMG" secondAttribute="bottom" id="N3h-CO-FJ4"/>
+                            <constraint firstItem="ysO-TD-XMG" firstAttribute="top" secondItem="8T7-HS-aiv" secondAttribute="top" id="dhp-BZ-FSx"/>
+                            <constraint firstItem="ysO-TD-XMG" firstAttribute="leading" secondItem="8T7-HS-aiv" secondAttribute="leading" id="zOG-Yn-GhH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DetailsTableView" destination="ysO-TD-XMG" id="pbZ-JB-yKa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sOe-vf-5ok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-825" y="777"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="drQ-T5-O2r">
             <objects>
@@ -83,7 +114,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="N2F-FU-dmn"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.070588235289999995" green="0.18823529410000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="vfI-Qz-E1o" firstAttribute="leading" secondItem="N2F-FU-dmn" secondAttribute="leading" id="WSn-hR-HUa"/>
                             <constraint firstItem="vfI-Qz-E1o" firstAttribute="top" secondItem="N2F-FU-dmn" secondAttribute="top" id="ee9-vi-E5N"/>
@@ -110,7 +141,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="maq-Mj-lEk"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="backgroundColor" red="0.66274509803921566" green="0.66274509803921566" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Favourite" landscapeImage="Favourite" largeContentSizeImage="Favourite" id="zDs-ng-I1v"/>
                 </viewController>
@@ -132,6 +163,7 @@
             <point key="canvasLocation" x="-2837" y="-194"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="Favourite" width="24" height="20"/>
         <image name="Home" width="24" height="24"/>

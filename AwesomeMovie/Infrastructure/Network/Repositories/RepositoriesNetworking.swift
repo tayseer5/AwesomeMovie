@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 
+//MARK: Movie repositories for getting movie data from API
 enum RepositoriesNetworking {
     case mostPopularMovie(pageNumber: Int)
     case topRatedMovie(pageNumber: Int)

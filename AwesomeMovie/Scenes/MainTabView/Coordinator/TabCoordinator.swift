@@ -10,10 +10,10 @@ import UIKit
 
 class TabCoordinator: BaseCoordinator, TabCoordinatorOutput {
     var finishFlow: (() -> Void)?
-    
+    //MARK: private var
     private let tabbarView: TabbarView
     private let coordinatorFactory: CoordinatorFactory
-    
+    //MARK: override func
     init(tabbarView: TabbarView, coordinatorFactory: CoordinatorFactory) {
         self.tabbarView = tabbarView
         self.coordinatorFactory = coordinatorFactory
@@ -23,7 +23,7 @@ class TabCoordinator: BaseCoordinator, TabCoordinatorOutput {
         tabbarView.onMovieFlowSelect = runMovieFlow()
         tabbarView.onFavouriteFlowSelect = runFavouriteFlow()
     }
-    
+    //MARK: coordinator module creator
     private func runMovieFlow() -> ((UINavigationController) -> ()) {
        return { navController in
          if navController.viewControllers.isEmpty == true {

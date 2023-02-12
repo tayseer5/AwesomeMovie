@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-
+//MARK: BASRAPI featch data respnse also creating and buid request
 class BaseAPI<T:TargetType> {
     //TODO: need inhance
     func fetchData<M: Decodable>(target: T, responseClass: M.Type, completionHandler:@escaping (Result<M, NSError>)-> Void) {

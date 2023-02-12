@@ -22,7 +22,7 @@ class FavouriteCoordinator: BaseCoordinator, FavouriteCoordinatorOutput {
     override func start(with option: DeepLinkOption? = nil){
         makeFavourite()
     }
-    
+    //MARK: - coordinator module creatour
     private func makeFavourite(with option: DeepLinkOption? = nil){
         let home = factory.makeFavouriteScreen()
         router.setRootModule(home)

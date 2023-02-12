@@ -13,11 +13,10 @@ extension UIViewController {
     private class func instantiateControllerInStoryboard<T: UIViewController>(_ storyboard: UIStoryboard, identifier: String) -> T {
         return storyboard.instantiateViewController(withIdentifier: identifier) as! T
     }
+    
     private class func instantiateFromNib<T: UIViewController>() -> T {
         return T.init(nibName: String(describing: T.self), bundle: nil)
     }
-
-    
     
     class func controllerInStoryboard(_ storyboard: UIStoryboard, identifier: String) -> Self {
         return instantiateControllerInStoryboard(storyboard, identifier: identifier)

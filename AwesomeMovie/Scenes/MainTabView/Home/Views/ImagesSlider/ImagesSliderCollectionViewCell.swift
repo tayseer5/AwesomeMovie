@@ -8,6 +8,7 @@
 import UIKit
 
 class ImagesSliderCollectionViewCell: UICollectionViewCell {
+    //MARK: IBOutlet
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var cellImage: UIImageView! {
         didSet {
@@ -15,6 +16,7 @@ class ImagesSliderCollectionViewCell: UICollectionViewCell {
              cellImage.clipsToBounds = true;
         }
     }
+    //MARK: override
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -25,7 +27,7 @@ class ImagesSliderCollectionViewCell: UICollectionViewCell {
     }
 
 }
-
+//MARK: ConfigurableCell Extention 
 extension ImagesSliderCollectionViewCell : ConfigurableCell {
     
     func configure(data viewModel:Movie, indexPath:IndexPath) {
