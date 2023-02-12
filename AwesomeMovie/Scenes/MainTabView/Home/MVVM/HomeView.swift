@@ -9,4 +9,5 @@ import Foundation
 
 
 protocol HomeView: BaseView{
+    var moveToDetails: ((_ movie: Movie) -> Void)? {get set}
 }

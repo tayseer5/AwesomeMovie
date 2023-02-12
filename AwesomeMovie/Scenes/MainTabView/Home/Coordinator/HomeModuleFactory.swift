@@ -9,5 +9,6 @@ import Foundation
 
 protocol HomeModuleFactory {
     func makeHomeScreen() -> HomeView
+    func makeMovieDetailsScreen (movie:Movie) -> MovieDetailsView
 }
 
