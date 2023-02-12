@@ -20,6 +20,7 @@ final class HomeMovieViewController: UIViewController, HomeView {
             movieCollectionView.registerNib(ImagesSliderCollectionViewCell.self)
             movieCollectionView.delegate = self
             movieCollectionView.dataSource = self
+            movieCollectionView.prefetchDataSource = self
         }
     }
     
@@ -79,7 +80,15 @@ extension HomeMovieViewController : UICollectionViewDataSource {
         return cell
        
     }
-    
-    
+}
+extension HomeMovieViewController : UICollectionViewDataSourcePrefetching {
+    func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
+        let needsFetch = indexPaths.contains { $0.row >= ((self.viewModel?.getNumberOfData() ?? 0) - 1) }
+        if needsFetch {
+            viewModel?.didLoadNextPage()
+        }
+    }
+    func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItemsAt indexPaths: [IndexPath]) {
+    }
 }
 

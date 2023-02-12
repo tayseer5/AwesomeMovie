@@ -41,7 +41,7 @@ class HomeMovieViewModel :HomeMovieViewModelOutput {
     private func getMovie(sortType: SortType,pageNumber: Int) {
         fetchMoviesDataUseCaseProtocol.getMovie(sortType: sortType, page: pageNumber) {[weak self] isDone, errorMessgae, response in
             if isDone {
-                self?.movies = response?.movie ?? []
+                self?.movies.append(contentsOf: response?.movie ?? [] )
                 self?.totalResult = response?.totalResults ?? 0
                 self?.dataLoaded?()
             } else {
@@ -67,9 +67,11 @@ extension HomeMovieViewModel: HomeMovieViewModelInput {
     func resetData() {
         self.pageNumber = 1
         self.sortType = .mostPopular
+        movies.removeAll()
         getMovie(sortType: sortType, pageNumber: pageNumber)
     }
     func viewDidLoad() {
+        movies.removeAll()
         getMovie(sortType: sortType, pageNumber: pageNumber)
     }
     
@@ -85,6 +87,7 @@ extension HomeMovieViewModel: HomeMovieViewModelInput {
     func changeSort(sortType: SortType) {
         self.pageNumber = 1
         self.sortType = sortType
+        movies.removeAll()
         getMovie(sortType: sortType, pageNumber: pageNumber)
     }
     
