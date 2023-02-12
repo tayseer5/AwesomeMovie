@@ -25,7 +25,7 @@ class TabCoordinator: BaseCoordinator, TabCoordinatorOutput {
     }
     
     private func runMovieFlow() -> ((UINavigationController) -> ()) {
-       return { [unowned self] navController in
+       return { navController in
          if navController.viewControllers.isEmpty == true {
            let itemCoordinator = self.coordinatorFactory.makeHomeCoordinator(navController: navController)
              self.addDependecny(itemCoordinator)
@@ -35,7 +35,7 @@ class TabCoordinator: BaseCoordinator, TabCoordinatorOutput {
      }
      
      private func runFavouriteFlow() -> ((UINavigationController) -> ()) {
-       return { [unowned self] navController in
+       return {  navController in
          if navController.viewControllers.isEmpty == true {
            let favouriteCoordinator = self.coordinatorFactory.makeFavouriteCoordinator(navController: navController)
              self.addDependecny(favouriteCoordinator)
