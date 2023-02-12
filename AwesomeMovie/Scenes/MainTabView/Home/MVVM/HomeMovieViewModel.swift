@@ -27,6 +27,7 @@ class HomeMovieViewModel :HomeMovieViewModelOutput {
     //MARK: private enity
     private let fetchMoviesDataUseCaseProtocol: FetchMoviesDataUseCaseProtocol
     private var pageNumber = 1
+    private var totalResult = 0
     private var sortType: SortType = .mostPopular
     private var movies :[Movie] = []
     //MARK: CallBacks
@@ -40,6 +41,8 @@ class HomeMovieViewModel :HomeMovieViewModelOutput {
     private func getMovie(sortType: SortType,pageNumber: Int) {
         fetchMoviesDataUseCaseProtocol.getMovie(sortType: sortType, page: pageNumber) {[weak self] isDone, errorMessgae, response in
             if isDone {
+                self?.movies = response?.movie ?? []
+                self?.totalResult = response?.totalResults ?? 0
                 self?.dataLoaded?()
             } else {
                 self?.showErrorMessage?(errorMessgae)
