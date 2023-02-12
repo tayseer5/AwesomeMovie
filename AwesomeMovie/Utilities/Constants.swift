@@ -15,7 +15,7 @@ import Foundation
 //MARK: Network Constaints
 enum BaseUrl: String {
     case baseUrl = "https://api.themoviedb.org/3/"
-    case baseImageUrl = "http://image.tmdb.org/t/p/"
+    case baseImageUrl = "https://image.tmdb.org/t/p/"
 }
 enum APIKeys: String {
     case apiKeyV1 = "76277347eaed8f1535c8babcfd49c1a7"
