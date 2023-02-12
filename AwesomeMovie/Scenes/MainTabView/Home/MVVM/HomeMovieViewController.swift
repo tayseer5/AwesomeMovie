@@ -18,6 +18,8 @@ final class HomeMovieViewController: UIViewController, HomeView {
             movieCollectionView.delegate = self
             movieCollectionView.dataSource = self
             movieCollectionView.prefetchDataSource = self
+            movieCollectionView.backgroundColor = UIColor(hexString: HexColors.grayshGreen.rawValue)
+       
         }
     }
     //MARK: var
@@ -32,7 +34,7 @@ final class HomeMovieViewController: UIViewController, HomeView {
         handlingBindingWithViewModel()
         viewModel?.viewDidLoad()
         adjustNavBarAndAddSortButtonWithAction()
-        self.navigationItem.title = "The title";
+        self.navigationItem.title = "Most Popular";
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
     //MARK: Private desgin function
@@ -71,12 +73,14 @@ final class HomeMovieViewController: UIViewController, HomeView {
             rightBarButtonsView.addArrangedSubview(sortButton)
             let rightBarButton = UIBarButtonItem(customView: rightBarButtonsView)
             self.navigationItem.rightBarButtonItems = [rightBarButton]
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor(hexString: HexColors.grayshGreen.rawValue)]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
     }
     func sortActionHandler(value:String) {
         if value == "Most Popular" {
+            self.navigationItem.title = "Most Popular";
             viewModel?.changeSort(sortType: .mostPopular)
         } else {
+            self.navigationItem.title = "Top Rated";
             viewModel?.changeSort(sortType: .topRated)
         }
         
