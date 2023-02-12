@@ -25,7 +25,7 @@ final class HomeMovieViewController: UIViewController, HomeView {
     
     var finishFlow: (() -> Void)?
     var viewModel: (HomeMovieViewModelInput & HomeMovieViewModelOutput)?
-    private var layout = PinterestLayout()
+    let cellWidth = UIScreen.main.bounds.width / 2.1
     override func viewDidLoad() {
         super.viewDidLoad()
         adjustUI()
@@ -34,11 +34,13 @@ final class HomeMovieViewController: UIViewController, HomeView {
     }
     
     private func adjustUI () {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        layout.itemSize = CGSize(width: cellWidth, height: cellWidth)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        layout.minimumInteritemSpacing = 5
+        layout.minimumLineSpacing = 5
         movieCollectionView?.collectionViewLayout = layout
-        layout.columnsCount = 2
-        layout.delegate = self
-        layout.contentPadding = PinterestLayout.Padding(horizontal: 5, vertical: 5)
-        layout.cellsPadding = PinterestLayout.Padding(horizontal: 10, vertical: 10)
     }
     private func handlingBindingWithViewModel() {
         viewModel?.showErrorMessage = { [weak self] messgage in
@@ -79,19 +81,5 @@ extension HomeMovieViewController : UICollectionViewDataSource {
     }
     
     
-}
-extension HomeMovieViewController: PinterestLayoutDelegate {
-    func cellSize(indexPath: IndexPath) -> CGSize {
-        // Calculate size based on the layout width
-        //let image = images[indexPath.row]
-        //guard let
-        let width = 100
-        let height = 150
-        //image.thumbnail?.height
-        //else { return .zero }
-        let cellWidth = layout.width
-        let size = CGSize(width: Int(cellWidth), height: Int(CGFloat((height/width)) * cellWidth))
-        return size
-    }
 }
 
