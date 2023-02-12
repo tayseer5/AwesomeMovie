@@ -54,7 +54,6 @@
 		31E6AB722996564E0018596B /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6AB6E2996564E0018596B /* BaseAPI.swift */; };
 		31E6AB75299656FD0018596B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6AB74299656FD0018596B /* Constants.swift */; };
 		31E6AB7A299720980018596B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6AB79299720980018596B /* Movie.swift */; };
-		31E6AB7D299730D70018596B /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6AB7C299730D70018596B /* PinterestLayout.swift */; };
 		31E6AB82299736210018596B /* MoviesRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6AB81299736210018596B /* MoviesRepositories.swift */; };
 		31E6AB84299736C70018596B /* FetchMoviesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E6AB83299736C70018596B /* FetchMoviesData.swift */; };
 		AAC860807C1D237A4C1FBB4E /* Pods_AwesomeMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8128B614A2005EEA76ED88A8 /* Pods_AwesomeMovie.framework */; };
@@ -110,7 +109,6 @@
 		31E6AB6E2996564E0018596B /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
 		31E6AB74299656FD0018596B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		31E6AB79299720980018596B /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		31E6AB7C299730D70018596B /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		31E6AB81299736210018596B /* MoviesRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepositories.swift; sourceTree = "<group>"; };
 		31E6AB83299736C70018596B /* FetchMoviesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMoviesData.swift; sourceTree = "<group>"; };
 		4C385B4B2BF33E378CF2F075 /* Pods-AwesomeMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeMovie.release.xcconfig"; path = "Target Support Files/Pods-AwesomeMovie/Pods-AwesomeMovie.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,7 +166,6 @@
 				310B825A2992CD4F00C0B97B /* Assets.xcassets */,
 				310B825C2992CD4F00C0B97B /* LaunchScreen.storyboard */,
 				310B825F2992CD4F00C0B97B /* Info.plist */,
-				31E6AB7B299730AC0018596B /* External */,
 			);
 			path = AwesomeMovie;
 			sourceTree = "<group>";
@@ -399,14 +396,6 @@
 			path = Entites;
 			sourceTree = "<group>";
 		};
-		31E6AB7B299730AC0018596B /* External */ = {
-			isa = PBXGroup;
-			children = (
-				31E6AB7C299730D70018596B /* PinterestLayout.swift */,
-			);
-			path = External;
-			sourceTree = "<group>";
-		};
 		31E6AB7E299734720018596B /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
@@ -582,7 +571,6 @@
 				310B828A2993093500C0B97B /* BundleExtensions.swift in Sources */,
 				314B35C229945B8A00F61551 /* FavouriteViewController.swift in Sources */,
 				311905DE299444F6000613D0 /* TabCoordinator.swift in Sources */,
-				31E6AB7D299730D70018596B /* PinterestLayout.swift in Sources */,
 				31E6AB82299736210018596B /* MoviesRepositories.swift in Sources */,
 				310B82722992D5CA00C0B97B /* BaseCoordinator.swift in Sources */,
 				31E6AB702996564E0018596B /* RepositoriesNetworking.swift in Sources */,
