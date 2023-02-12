@@ -398,8 +398,8 @@
             filePath = "AwesomeMovie/Scenes/MainTabView/Home/MVVM/HomeMovieViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -430,8 +430,8 @@
             filePath = "AwesomeMovie/Scenes/MainTabView/Home/MVVM/HomeMovieViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "handlingBindingWithViewModel()"
             landmarkType = "7">
          </BreakpointContent>
@@ -446,8 +446,8 @@
             filePath = "AwesomeMovie/Scenes/MainTabView/Home/MVVM/HomeMovieViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "collectionView(_:numberOfItemsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -462,8 +462,8 @@
             filePath = "AwesomeMovie/Scenes/MainTabView/Home/MVVM/HomeMovieViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1019,8 +1019,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
             endingLineNumber = "18"
-            landmarkName = "onFavouriteFlowSelect"
-            landmarkType = "24">
+            landmarkName = "MainTabController"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "7AF1D9B6-601F-4761-8F1E-4CD30EC4463B - 12ba541b92ebf217"
@@ -1292,7 +1292,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "5B9924CE-F79F-4909-86FA-1FF09520BE81"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AwesomeMovie/Scenes/MainTabView/MovieDetails/Views/PosterImageTableViewCell.swift"
@@ -1302,6 +1302,54 @@
             endingLineNumber = "33"
             landmarkName = "bindData(model:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "94B53FE4-21F8-4B28-8513-1CBF700AE82A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AwesomeMovie/Scenes/MainTabView/MovieDetails/Views/BasicInfoTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "bindData(model:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "94B53FE4-21F8-4B28-8513-1CBF700AE82A - 4d00a2dfb31ec186"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AwesomeMovie.BasicInfoTableViewCell.bindData(model: AwesomeMovie.Movie) -&gt; ()"
+                  moduleName = "AwesomeMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tayseeranwar/Desktop/AwesomeMovie/AwesomeMovie/Scenes/MainTabView/MovieDetails/Views/BasicInfoTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  uuid = "94B53FE4-21F8-4B28-8513-1CBF700AE82A - 4d00a2dfb31ec186"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AwesomeMovie.BasicInfoTableViewCell.bindData(model: AwesomeMovie.Movie) -&gt; ()"
+                  moduleName = "AwesomeMovie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tayseeranwar/Desktop/AwesomeMovie/AwesomeMovie/Scenes/MainTabView/MovieDetails/Views/BasicInfoTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "310">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
