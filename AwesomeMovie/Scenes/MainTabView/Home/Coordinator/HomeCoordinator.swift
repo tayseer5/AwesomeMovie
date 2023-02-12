@@ -27,7 +27,7 @@ class HomeCoordinator: BaseCoordinator, HomeCoordinatorOutput {
         var home = factory.makeHomeScreen()
         home.moveToDetails = { [weak self] movie in
             let vc = self?.factory.makeMovieDetailsScreen(movie: movie)
-            self?.router.push(vc)
+            self?.router.push(vc, hideBottomBar: true)
         }
         router.setRootModule(home)
     }
