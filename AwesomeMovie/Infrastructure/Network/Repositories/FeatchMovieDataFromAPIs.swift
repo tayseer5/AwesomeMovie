@@ -8,13 +8,20 @@
 import Foundation
 
 class FeatchMovieDataFromAPIs: BaseAPI<RepositoriesNetworking>, MoviesRepositories {
-    func getMostPopularMovie(pageNumber: Int, completionHandler: @escaping (Result<MovieResponse, NSError>) -> Void) {
+    func getMovie(sortType: SortType, pageNumber: Int, completionHandler: @escaping (Result<MovieResponse, NSError>) -> Void) {
+        switch sortType {
+        case .mostPopular:
+            getMostPopularMovie(pageNumber: pageNumber, completionHandler: completionHandler)
+        case .topRated :
+            getTopRatedMovie(pageNumber: pageNumber, completionHandler: completionHandler)
+        }
+    }
+    private func getMostPopularMovie(pageNumber: Int, completionHandler: @escaping (Result<MovieResponse, NSError>) -> Void) {
         self.fetchData(target: .mostPopularMovie(pageNumber: pageNumber), responseClass: MovieResponse.self) { (result) in
             completionHandler(result)
         }
     }
-    
-    func getTopRatedMovie(pageNumber: Int, completionHandler: @escaping (Result<MovieResponse, NSError>) -> Void) {
+    private func getTopRatedMovie(pageNumber: Int, completionHandler: @escaping (Result<MovieResponse, NSError>) -> Void) {
         self.fetchData(target: .topRatedMovie(pageNumber: pageNumber), responseClass: MovieResponse.self) { (result) in
             completionHandler(result)
         }

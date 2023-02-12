@@ -17,15 +17,7 @@ class FetchMoviesDataUseCase: FetchMoviesDataUseCaseProtocol {
     }
     
     func getMovie(sortType: SortType, page: Int, completion: @escaping (Bool, String, MovieResponse?) -> Void) {
-        switch sortType {
-        case .topRated :
-            topRatedMovie(page: page, completion: completion)
-        case .mostPopular:
-            mostPopularMovie(page: page, completion: completion)
-        }
-    }
-    private func mostPopularMovie (page: Int, completion: @escaping (Bool, String, MovieResponse?) -> Void) {
-        moviesRepositories.getMostPopularMovie(pageNumber: page) { result in
+        moviesRepositories.getMovie(sortType:sortType,pageNumber: page) { result in
             print("getMostPopularMovie")
             print(result)
             switch result {
@@ -38,19 +30,5 @@ class FetchMoviesDataUseCase: FetchMoviesDataUseCaseProtocol {
             }
         }
     }
-    private func topRatedMovie (page: Int, completion: @escaping (Bool, String, MovieResponse?) -> Void) {
-        moviesRepositories.getTopRatedMovie(pageNumber: page) { result in
-            print("getMostPopularMovie")
-            print(result)
-            switch result {
-            case .success(let data):
-                completion(true,"",data)
-                break;
-            case .failure(let error):
-                completion(false,error.localizedDescription,nil)
-                break
-            }
-        }
-    }
+    
 }
-
