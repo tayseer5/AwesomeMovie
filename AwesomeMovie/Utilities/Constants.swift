@@ -34,6 +34,7 @@ enum Param: String {
 enum SortType {
     case mostPopular
     case topRated
+    case none
 }
 //MARK: Color Constaints
 enum HexColors: String {

@@ -9,7 +9,7 @@ import Foundation
 final class ModuleFactoryImplementation:HomeModuleFactory,FavouriteModuleFactory {
     func makeHomeScreen() -> HomeView {
         let vc = HomeMovieViewController.controllerFromStoryboard(.main)
-        vc.viewModel = HomeMovieViewModel(fetchMoviesDataUseCaseProtocol: FetchMoviesDataUseCase(moviesRepositories: FeatchMovieDataFromAPIs()))
+        vc.viewModel = HomeMovieViewModel(fetchMoviesDataUseCaseProtocol: FetchMoviesDataUseCase(moviesRepositories: MovieDataFromAPIs()))
         return vc
     }
     func makeFavouriteScreen() -> FavouriteView {

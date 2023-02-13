@@ -11,8 +11,8 @@ protocol FetchMoviesDataUseCaseProtocol {
     func getMovie(sortType: SortType, page: Int, completion: @escaping(_ isDone: Bool,_ errorMsg: String,_ data: MovieResponse?)-> Void)
 }
 class FetchMoviesDataUseCase: FetchMoviesDataUseCaseProtocol {
-    private let moviesRepositories: MoviesRepositories
-    init(moviesRepositories: MoviesRepositories){
+    private let moviesRepositories: FeatchMoviesRepositories
+    init(moviesRepositories: FeatchMoviesRepositories){
         self.moviesRepositories = moviesRepositories
     }
     
